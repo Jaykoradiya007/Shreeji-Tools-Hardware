@@ -1,0 +1,269 @@
+# Replit Prompt — Shreeji Tools & Hardware Website
+
+---
+
+## Project Overview
+
+Build a complete, professional, multi-page static website for **Shreeji Tools & Hardware**, a hardware and tools retail shop based in **Rajkot, Gujarat, India**. The business has been operating since **2017** and serves walk-in retail customers, industrial buyers, and contractors.
+
+The website must be informative, visually striking, and showcasing — acting as a digital storefront that builds trust and drives enquiries.
+
+---
+
+## Business Details (Placeholder — owner will edit these)
+
+| Field | Placeholder Value | Where to Edit |
+|---|---|---|
+| Phone | +91 98765 43210 | `index.html` → Contact section + header |
+| WhatsApp | +91 98765 43210 | `index.html` → WhatsApp button href |
+| Address | Shreeji Tools and Hardware, Radhe Estate, Balaji Industrial Area, B/H. Maldhari Hotel, Gondal Road, Kothariya, Rajkot – 360004 | `index.html` → Contact section + Google Maps embed |
+| Email | — Not displayed on website | N/A |
+| Google Maps Embed | Replace iframe src with actual Google Maps embed link | `index.html` → Map iframe |
+| Tagline | *"The Strength Behind Every Build."* | `index.html` → Hero section |
+
+---
+
+## Design Direction
+
+**Style**: Dual-tone, minimal, clean, and industrial. The design should feel crafted specifically for the tools & hardware industry — not generic.
+
+**Design Inspiration Keywords**: Industrial precision · Machined metal · Blueprint grids · Workshop aesthetic · Utilitarian elegance
+
+**Typography**:
+- Use **Google Fonts** only (free CDN).
+- Display/Heading font: Something bold and industrial — e.g. `Barlow Condensed`, `Rajdhani`, or `Bebas Neue`.
+- Body font: Clean and legible — e.g. `DM Sans`, `Nunito Sans`, or `Outfit`.
+- Avoid Inter, Roboto, Arial, and generic system fonts.
+
+**Color Scheme — Dual Tone (Light Base)**:
+- Primary/Background color: White (`#FFFFFF`) or Off-White (`#F7F6F2`) — used for page background, section backgrounds, and cards.
+- Secondary/Accent color: Pick ONE bold accent that contrasts beautifully against white and feels industrial — best options:
+  - Safety Orange (`#E8570A`) — energetic, workshop-grade, high visibility
+  - Steel Blue (`#1A3C5E`) — professional, trusted, corporate strength
+  - Amber Gold (`#C8860A`) — premium, warm, established business feel
+  - Signal Red (`#C1121F`) — bold, powerful, attention-grabbing
+- The accent color is used for: headings, CTA buttons, card borders on hover, icon fills, badges, section dividers, and nav highlights.
+- Use CSS custom properties (variables) for all colors — defined once at `:root`.
+- Background must feel clean, airy, and professional — white/off-white base with the accent color as the hero tone.
+- Sections can alternate between pure white (`#FFFFFF`) and soft off-white (`#F7F6F2`) for visual separation — no dark backgrounds anywhere on the page except optionally the very top announcement bar and footer.
+
+**Layout & Feel**:
+- Asymmetric, bold section headers with large typography.
+- Use geometric accent shapes (thin lines, corner brackets, diagonal dividers) in the accent color as decorative elements — no clipart.
+- Generous whitespace throughout — the white base needs breathing room to feel premium, not empty.
+- Smooth scroll behaviour across the whole page.
+- Sticky navigation bar — white background with a subtle bottom border, gains a soft box-shadow on scroll.
+- Subtle entrance animations on scroll using CSS `@keyframes` + `IntersectionObserver` — staggered reveals for cards and sections.
+- Hover effects on product category cards (accent color border highlight, subtle upward lift — no heavy shadows).
+- Text colors: near-black (`#1A1A1A`) for headings, dark grey (`#444444`) for body text — never pure black on white.
+
+---
+
+## Pages & Sections Required
+
+### 1. Navigation Bar (Sticky)
+- Logo: "SHREEJI TOOLS & HARDWARE" — styled with the display font. No image logo needed; CSS-styled text logo is fine.
+- Links: Home · Products · About · Brands · Contact
+- A small top bar above the nav (desktop only) showing: phone number | address | "Est. 2017"
+- Mobile hamburger menu with smooth open/close animation.
+
+### 2. Hero Section
+- Full-width, visually bold.
+- Main headline (large display font): e.g. **"Your Workshop Starts Here."**
+- Sub-headline: *"Rajkot's trusted destination for 500+ tools, hardware, and industrial supplies — since 2017."*
+- Tagline badge: *"The Strength Behind Every Build."*
+- Two CTA buttons: **"Explore Products"** (scrolls to products) + **"Contact Us"** (scrolls to contact).
+- Background: Clean white or off-white base with bold accent color geometric shapes, thin diagonal lines, or a subtle dot/grid pattern as CSS decoration. No dark backgrounds, no stock photos.
+
+### 3. Stats / Trust Bar
+A horizontal strip with 4 key numbers — animated count-up on scroll:
+- **500+** Products
+- **Since 2017** — Est. Year
+- **3** Customer Types (Retail · Industrial · Contractors)
+- **5+** Top Brands
+
+### 4. Product Categories Section
+
+Title: *"What We Stock"*
+
+Display product categories as a **grid of cards** (3 columns desktop, 2 tablet, 1 mobile). Each card has:
+- A relevant SVG icon or CSS icon (no external image files)
+- Category name
+- 4–6 example items listed below in small text
+
+**Categories to include (group similar items):**
+
+| Category | Example Items |
+|---|---|
+| Hand Tools | Hammers, Screwdrivers, Spanners, Pliers, Chisels, Files |
+| Power Tools | Angle Grinders, Drills, Rotary Hammers, Jigsaw, Sanders |
+| Abrasives | Grinding Wheels, Cutting Wheels, Flap Discs, Sanding Belts |
+| Fasteners & Hardware | Nuts, Bolts, Screws, Hinges, Anchors, Washers |
+| V-Belts & Drives | V-Belts, Timing Belts, Belt Tensioners, Pulleys |
+| Safety Equipment | Helmets, Gloves, Safety Glasses, Ear Plugs, Reflective Vests |
+| Paints & Coatings | Enamel Paints, Spray Paints, Primers, Rust Preventives |
+| Electrical & Misc | Tapes, Adhesives, Lubricants, Wire, Cable Ties, Ties |
+
+Add a note below the grid: *"We stock 500+ products. Can't find what you need? Call or WhatsApp us."* with a WhatsApp CTA button linking to `https://wa.me/919876543210` (owner to replace number).
+
+### 5. Brands Section
+
+Title: *"Brands We Carry"*
+
+Display brand names as styled text badges/pills in a responsive wrap layout (no logos — just clean text badges to avoid copyright issues). Include:
+
+**Bosch · Stanley · Makita · 3M · Taparia · Dewalt · Hitachi · Norton · Cumi · Fevicol · Asian Paints · Ambica · Jhalani · Venus · Karam**
+
+Use the accent color for badge borders/text. Clean, professional look.
+
+### 6. About Us Section
+
+Title: *"About Shreeji Tools & Hardware"*
+
+Two-column layout (text left, visual right — the "visual" can be a CSS-illustrated workshop/gear graphic or a styled info card, no stock photos):
+
+**Text content:**
+*"Established in 2017, Shreeji Tools & Hardware is a trusted name in Rajkot's tools and hardware trade. We supply a wide range of 500+ products — from everyday hand tools and power tools to industrial-grade fasteners, safety equipment, V-belts, abrasives, paints, and much more.*
+
+*Whether you're a professional contractor, a factory maintenance team, or a walk-in retail customer, we're your one-stop shop for all things tools and hardware. Our team is knowledgeable, our stock is deep, and our prices are competitive."*
+
+Three icon highlights below:
+- Wide Selection — 500+ Products
+- Trusted Brands — Industry-leading names
+- Expert Advice — Knowledgeable staff
+
+### 7. Why Choose Us Section
+
+4 feature cards in a row:
+- Deep Stock — 500+ products always available
+- Quality Assured — Only trusted brands
+- Serving Since 2017 — 7+ years of expertise
+- All Customer Types — Retail, Industrial & Contractors
+
+### 8. Contact Section
+
+Title: *"Get In Touch"*
+
+Two-column layout:
+
+**Left: Contact Info**
+- Address: Shreeji Tools and Hardware, Radhe Estate, Balaji Industrial Area, B/H. Maldhari Hotel, Gondal Road, Kothariya, Rajkot – 360004 *(real address)*
+- Phone: +91 98765 43210 *(owner to edit)*
+- WhatsApp button (styled with WhatsApp green) linking to `https://wa.me/919876543210`
+- Hours: Mon–Sat: 9:00 AM – 7:00 PM | Sunday: Closed *(owner to edit)*
+- Do NOT display any email address on the website.
+
+**Right: Enquiry Form + Map**
+- Simple enquiry form (Name, Phone, Message, Submit) using **Web3Forms** free service.
+  - Add a placeholder `action` attribute: `https://api.web3forms.com/submit`
+  - Add a comment in HTML: `<!-- Replace YOUR_ACCESS_KEY with your Web3Forms key from https://web3forms.com -->`
+  - Include a hidden input: `<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">`
+- Below the form: embed the following Google Maps iframe showing the exact shop location — use this code as-is:
+```html
+<iframe src="https://www.google.com/maps?q=22.2396696,70.8028702&hl=en&z=18&output=embed" width="100%" height="300" style="border:0;border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+```
+
+### 9. Footer
+
+- Logo + tagline: *"The Strength Behind Every Build."*
+- Quick links: Home · Products · About · Brands · Contact
+- Contact snapshot: phone + address
+- WhatsApp floating button (fixed bottom-right, always visible)
+- Copyright: © 2025 Shreeji Tools & Hardware. All rights reserved.
+
+---
+
+## Technical Requirements
+
+### File Structure
+```
+/
+├── index.html         ← All sections in one page (single-page site)
+├── css/
+│   └── style.css      ← All styles
+├── js/
+│   └── main.js        ← Scroll animations, hamburger menu, count-up
+└── README.md          ← Simple notes for the owner on what to edit
+```
+
+### Fonts & Icons
+- Fonts: Google Fonts CDN only
+- Icons: Font Awesome CDN (for tool/contact icons) — `https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css`
+- No icon image files in the repo
+
+### JavaScript (main.js)
+- Sticky nav: adds `.scrolled` class on scroll (CSS handles the style change)
+- Hamburger menu toggle with smooth animation
+- IntersectionObserver for scroll-triggered fade/slide-in animations
+- Count-up animation for stats section numbers
+- Smooth scroll for all anchor `#` links
+
+---
+
+## GitHub Pages Development Guidelines
+### Platform constraints — build accordingly
+- This website will be hosted on GitHub Pages. The developer must treat it as a
+  purely static site. No server-side code of any kind — no PHP, Node.js, Python,
+  Ruby, or any backend language. Everything must run entirely in the browser.
+### What NOT to do
+- Do NOT use server-side form handling. All contact/enquiry forms must use a
+  third-party service such as Formspree or Web3Forms for form submission.
+- Do NOT store any API keys, passwords, or secret tokens in JavaScript files.
+  GitHub Pages repos are public — any key in the code is visible to everyone.
+- Do NOT upload videos directly to the repository. Embed videos via YouTube or
+  Vimeo iframe instead.
+- Do NOT use .htaccess files, server redirects, or any Nginx/Apache config.
+  These have no effect on GitHub Pages.
+- Do NOT build a backend-dependent feature (user login, database calls, dynamic
+  inventory) and expect it to work — it will not.
+- Do NOT commit large uncompressed images. Each file must stay under 100 MB and
+  the total repository must stay under 1 GB.
+### What TO do — GitHub Pages friendly practices
+- Build with plain HTML, CSS, and vanilla JavaScript (or a static site generator
+  like Jekyll or Hugo if needed).
+- Compress all images before committing. Use WebP format wherever possible.
+- Use a free CDN for fonts (Google Fonts) and icons (Font Awesome CDN) — do not
+  bundle large font files in the repo.
+- Use Formspree or Web3Forms for the contact form — these are free and require
+  only a small HTML snippet, no backend.
+- For any third-party integrations (maps, analytics, chat widgets), use their
+  official embed/iframe snippet only — no server calls.
+- Keep the total repository size well under 500 MB as a safe buffer.
+- Minify CSS and JS files before the final deployment push.
+- Test all pages as static files locally before pushing — open index.html
+  directly in a browser with no local server running.
+### Deployment reminder
+- The site deploys automatically from the main branch. Every push triggers a
+  rebuild. Batch all changes into single commits to avoid hitting the
+  10 builds/hour rate limit.
+- The live URL will be: https://[username].github.io/[repo-name]
+  Replace with the actual repo name once confirmed.
+
+---
+
+## README.md — Must Include These Edit Instructions
+
+Generate a `README.md` file with a clear **"How to Edit Your Website"** section covering exactly:
+
+1. **Phone Number** — search for `98765 43210` in `index.html` and replace all instances with your real number.
+2. **WhatsApp Link** — search for `919876543210` in `index.html` and replace with your number (country code + number, no spaces or +).
+3. **Address** — already updated in the prompt. If you ever need to change it, search for `Kothariya` in `index.html` and edit the full address line.
+4. **Email** — no email is displayed on the website. If you ever get a business email in the future, add it in the Contact section of `index.html`.
+5. **Google Maps** — already embedded with your exact shop location. No changes needed.
+6. **Web3Forms (Contact Form)** — visit https://web3forms.com → enter your email → get your free access key → replace `YOUR_ACCESS_KEY` in `index.html`.
+7. **Business Hours** — search for `Mon–Sat: 9:00 AM` in `index.html` and update to your actual hours.
+
+---
+
+## Final Checklist Before Delivering
+
+- [ ] All placeholder info is clearly marked with comments in the HTML: `<!-- EDIT: replace this -->`
+- [ ] Website is fully responsive (mobile, tablet, desktop)
+- [ ] All navigation links scroll smoothly to correct sections
+- [ ] WhatsApp floating button is always visible
+- [ ] Contact form is wired to Web3Forms with the placeholder key
+- [ ] Google Maps iframe is present (generic Rajkot location as placeholder)
+- [ ] No broken links, no console errors
+- [ ] Fonts load from Google Fonts CDN
+- [ ] Icons load from Font Awesome CDN
+- [ ] README.md contains the full edit guide for the owner

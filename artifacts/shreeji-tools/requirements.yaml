@@ -1,0 +1,12 @@
+packages:
+  "framer-motion": "For smooth scroll entry animations and count-up effects"
+  "react-countup": "For the animated statistics numbers"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility to merge tailwind classes"
+
+images: []
+
+notes:
+  - "Pure static site, no backend API needed."
+  - "Contact form uses Web3Forms standard HTML POST submission."
+  - "Using Font Awesome via CDN as requested."
