@@ -9,7 +9,6 @@ import { Features } from "@/components/sections/Features";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
-import { ColorPicker } from "@/components/ColorPicker";
 
 export default function Home() {
   return (
@@ -29,7 +28,6 @@ export default function Home() {
 
       <Footer />
       <FloatingWhatsApp />
-      <ColorPicker />
     </div>
   );
 }

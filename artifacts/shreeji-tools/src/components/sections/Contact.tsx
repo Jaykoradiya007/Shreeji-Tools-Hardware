@@ -88,8 +88,8 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium text-foreground mb-1">Business Hours</h4>
-                  <p className="text-muted-foreground">Monday – Saturday: 9:00 AM – 7:00 PM</p>
-                  <p className="text-muted-foreground text-destructive font-semibold mt-1">Sunday: Closed</p>
+                  <p className="text-muted-foreground">Mon – Tue, Thu – Sun: 9:00 AM – 7:00 PM</p>
+                  <p className="text-muted-foreground font-semibold mt-1" style={{color:"#C1121F"}}>Wednesday: Closed</p>
                 </div>
               </div>
             </div>

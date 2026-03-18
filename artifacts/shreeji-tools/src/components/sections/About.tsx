@@ -5,7 +5,7 @@ export function About() {
   return (
     <section id="about" className="py-24 bg-background overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -49,7 +49,7 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative h-full min-h-[400px]"
+            className="relative h-[320px] md:h-[480px] lg:h-full lg:min-h-[460px]"
           >
             {/* Hand Tools Photo */}
             <div className="absolute inset-0 rounded-sm overflow-hidden border-2 border-border">

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section id="home" className="relative min-h-[85vh] flex items-center bg-secondary overflow-hidden pt-10 pb-20">
+    <section id="home" className="relative min-h-[90vh] flex items-center bg-secondary overflow-hidden pt-20 pb-16 md:pt-10 md:pb-20">
       {/* Background Decor */}
       <div className="absolute inset-0 bg-grid-pattern opacity-50"></div>
       <div className="absolute top-0 right-0 w-1/3 h-full bg-diagonal-stripes opacity-40 transform translate-x-1/2"></div>
@@ -30,7 +30,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-6xl sm:text-7xl lg:text-8xl font-display font-semibold leading-[0.9] text-foreground mb-6"
+            className="text-4xl sm:text-6xl lg:text-8xl font-display font-semibold leading-[0.95] text-foreground mb-6"
           >
             YOUR <span className="text-primary">WORKSHOP</span><br />
             STARTS HERE.

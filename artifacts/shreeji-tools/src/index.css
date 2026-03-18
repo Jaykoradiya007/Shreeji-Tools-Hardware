@@ -40,29 +40,29 @@
 }
 
 :root {
-  /* Warm white/off-white theme with Safety Orange accent */
+  /* Signal Red theme */
   --background: 0 0% 100%;
   --foreground: 0 0% 10%;
   
-  --primary: 21 92% 47%; /* #E8570A */
+  --primary: 355 82% 42%; /* #C1121F Signal Red */
   --primary-foreground: 0 0% 100%;
   
-  --secondary: 48 20% 96%; /* #F7F6F2 */
+  --secondary: 0 10% 97%; /* very light warm white */
   --secondary-foreground: 0 0% 10%;
   
-  --muted: 48 10% 90%;
+  --muted: 0 5% 92%;
   --muted-foreground: 0 0% 35%;
   
-  --accent: 21 92% 47%; /* #E8570A */
+  --accent: 355 82% 42%; /* #C1121F */
   --accent-foreground: 0 0% 100%;
   
   --card: 0 0% 100%;
   --card-foreground: 0 0% 10%;
-  --card-border: 48 10% 90%;
+  --card-border: 0 5% 90%;
   
-  --border: 48 10% 90%;
-  --input: 48 10% 85%;
-  --ring: 21 92% 47%;
+  --border: 0 5% 90%;
+  --input: 0 5% 87%;
+  --ring: 355 82% 42%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
