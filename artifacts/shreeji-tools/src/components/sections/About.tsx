@@ -55,7 +55,10 @@ export function About() {
             <div className="absolute inset-0 rounded-sm overflow-hidden border-2 border-border">
               <img
                 src={handToolsImg}
-                alt="Professional hand tools — hammers, spanners, screwdrivers, pliers and chisels"
+                alt="Professional hand tools — hammers, spanners, screwdrivers, pliers and chisels — available at Shreeji Tools & Hardware, Rajkot"
+                loading="lazy"
+                width="700"
+                height="500"
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">

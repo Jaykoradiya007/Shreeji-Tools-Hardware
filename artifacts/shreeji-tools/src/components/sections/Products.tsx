@@ -87,7 +87,10 @@ export function Products() {
               <div className="relative h-44 overflow-hidden bg-secondary">
                 <img
                   src={category.image}
-                  alt={category.title}
+                  alt={`${category.title} – tools and hardware available at Shreeji Tools, Rajkot`}
+                  loading="lazy"
+                  width="400"
+                  height="300"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />

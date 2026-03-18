@@ -9,7 +9,9 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src={heroBg}
-          alt="Workshop background"
+          alt="Industrial workshop with professional tools — Shreeji Tools & Hardware, Rajkot"
+          width="1600"
+          height="900"
           className="w-full h-full object-cover"
         />
         {/* Dark overlay so text stays readable */}
