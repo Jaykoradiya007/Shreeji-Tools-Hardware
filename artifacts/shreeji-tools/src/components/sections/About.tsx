@@ -13,7 +13,7 @@ export function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">ABOUT SHREEJI</h2>
+            <h2 className="text-4xl md:text-5xl font-display font-semibold mb-4">ABOUT SHREEJI</h2>
             <div className="w-20 h-1.5 bg-primary mb-8"></div>
             
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
@@ -28,17 +28,17 @@ export function About() {
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
               <div className="flex flex-col gap-2">
                 <i className="fa-solid fa-boxes-stacked text-3xl text-primary"></i>
-                <h4 className="font-bold text-foreground">Wide Selection</h4>
+                <h4 className="font-medium text-foreground">Wide Selection</h4>
                 <p className="text-sm text-muted-foreground">500+ Products</p>
               </div>
               <div className="flex flex-col gap-2">
                 <i className="fa-solid fa-award text-3xl text-primary"></i>
-                <h4 className="font-bold text-foreground">Trusted Brands</h4>
+                <h4 className="font-medium text-foreground">Trusted Brands</h4>
                 <p className="text-sm text-muted-foreground">Industry leaders</p>
               </div>
               <div className="flex flex-col gap-2">
                 <i className="fa-solid fa-comments text-3xl text-primary"></i>
-                <h4 className="font-bold text-foreground">Expert Advice</h4>
+                <h4 className="font-medium text-foreground">Expert Advice</h4>
                 <p className="text-sm text-muted-foreground">Knowledgeable staff</p>
               </div>
             </div>

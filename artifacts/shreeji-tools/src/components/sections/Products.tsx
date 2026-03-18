@@ -49,7 +49,7 @@ export function Products() {
     <section id="products" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">WHAT WE STOCK</h2>
+          <h2 className="text-4xl md:text-5xl font-display font-semibold mb-4">WHAT WE STOCK</h2>
           <div className="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             Everything you need for your next project, all under one roof. Industrial quality at competitive prices.
@@ -69,7 +69,7 @@ export function Products() {
               <div className="w-14 h-14 bg-secondary group-hover:bg-primary/10 rounded-sm flex items-center justify-center mb-6 transition-colors">
                 <i className={`fa-solid ${category.icon} text-2xl text-primary`}></i>
               </div>
-              <h3 className="text-xl font-bold mb-3 font-display">{category.title}</h3>
+              <h3 className="text-xl font-medium mb-3 font-display">{category.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {category.items}
               </p>
@@ -83,7 +83,7 @@ export function Products() {
           viewport={{ once: true }}
           className="mt-16 text-center bg-secondary p-8 rounded-sm border border-border"
         >
-          <h3 className="text-2xl font-display font-bold mb-2">Can't find what you need?</h3>
+          <h3 className="text-2xl font-display font-semibold mb-2">Can't find what you need?</h3>
           <p className="text-muted-foreground mb-6">We stock 500+ products in our physical store.</p>
           <Button asChild className="bg-[#25D366] hover:bg-[#20bd5a] text-white">
             <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer">

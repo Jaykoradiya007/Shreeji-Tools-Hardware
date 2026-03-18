@@ -37,7 +37,7 @@ export function Contact() {
     <section id="contact" className="py-24 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">GET IN TOUCH</h2>
+          <h2 className="text-4xl md:text-5xl font-display font-semibold mb-4">GET IN TOUCH</h2>
           <div className="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground text-lg">Visit our shop or drop us a message for quotes and inquiries.</p>
         </div>
@@ -46,7 +46,7 @@ export function Contact() {
           
           {/* Left: Contact Info */}
           <div>
-            <h3 className="text-2xl font-bold font-display mb-8 pb-4 border-b">Contact Information</h3>
+            <h3 className="text-2xl font-semibold font-display mb-8 pb-4 border-b">Contact Information</h3>
             
             <div className="space-y-8">
               <div className="flex items-start gap-4">
@@ -54,7 +54,7 @@ export function Contact() {
                   <i className="fa-solid fa-location-dot text-primary text-xl"></i>
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground mb-1">Our Location</h4>
+                  <h4 className="font-medium text-foreground mb-1">Our Location</h4>
                   <p className="text-muted-foreground leading-relaxed">
                     Shreeji Tools and Hardware, Radhe Estate,<br/>
                     Balaji Industrial Area, B/H. Maldhari Hotel,<br/>
@@ -69,7 +69,7 @@ export function Contact() {
                   <i className="fa-solid fa-phone text-primary text-xl"></i>
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground mb-1">Phone Number</h4>
+                  <h4 className="font-medium text-foreground mb-1">Phone Number</h4>
                   <p className="text-muted-foreground text-lg font-semibold">+91 98765 43210</p>
                   <a 
                     href="https://wa.me/919876543210" 
@@ -87,7 +87,7 @@ export function Contact() {
                   <i className="fa-solid fa-clock text-primary text-xl"></i>
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground mb-1">Business Hours</h4>
+                  <h4 className="font-medium text-foreground mb-1">Business Hours</h4>
                   <p className="text-muted-foreground">Monday – Saturday: 9:00 AM – 7:00 PM</p>
                   <p className="text-muted-foreground text-destructive font-semibold mt-1">Sunday: Closed</p>
                 </div>
@@ -98,7 +98,7 @@ export function Contact() {
           {/* Right: Form & Map */}
           <div className="flex flex-col gap-8">
             <div className="bg-secondary p-6 md:p-8 border border-border">
-              <h3 className="text-xl font-bold font-display mb-6">Send an Enquiry</h3>
+              <h3 className="text-xl font-semibold font-display mb-6">Send an Enquiry</h3>
               
               <form onSubmit={handleSubmit} className="space-y-4">
                 {/* Replace YOUR_ACCESS_KEY with your Web3Forms key from https://web3forms.com */}

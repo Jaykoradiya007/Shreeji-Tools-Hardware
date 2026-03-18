@@ -19,7 +19,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="inline-block py-1.5 px-4 bg-primary text-primary-foreground font-bold tracking-widest text-xs uppercase mb-6 shadow-md transform -skew-x-12">
+            <span className="inline-block py-1.5 px-4 bg-primary text-primary-foreground font-medium tracking-widest text-xs uppercase mb-6 shadow-md transform -skew-x-12">
               <span className="inline-block transform skew-x-12">
                 The Strength Behind Every Build
               </span>
@@ -30,7 +30,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-6xl sm:text-7xl lg:text-8xl font-display font-bold leading-[0.9] text-foreground mb-6"
+            className="text-6xl sm:text-7xl lg:text-8xl font-display font-semibold leading-[0.9] text-foreground mb-6"
           >
             YOUR <span className="text-primary">WORKSHOP</span><br />
             STARTS HERE.

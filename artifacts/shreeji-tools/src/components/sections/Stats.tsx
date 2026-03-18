@@ -27,7 +27,7 @@ export function Stats() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="text-center px-4"
             >
-              <div className="text-4xl md:text-5xl font-display font-bold text-primary mb-2">
+              <div className="text-4xl md:text-5xl font-display font-semibold text-primary mb-2">
                 {stat.prefix}
                 {stat.isText ? (
                   stat.text

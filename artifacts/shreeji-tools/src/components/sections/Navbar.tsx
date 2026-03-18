@@ -34,7 +34,7 @@ export function Navbar() {
           <div className="w-10 h-10 bg-primary rounded-sm flex items-center justify-center text-white transform group-hover:-rotate-12 transition-transform duration-300">
             <i className="fa-solid fa-screwdriver-wrench text-xl"></i>
           </div>
-          <span className="font-display font-bold text-2xl tracking-tight text-foreground">
+          <span className="font-display font-semibold text-2xl tracking-tight text-foreground">
             SHREEJI <span className="text-primary">TOOLS & HARDWARE</span>
           </span>
         </a>

@@ -41,7 +41,7 @@ export function Features() {
               <div className="w-16 h-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-4">
                 <i className={`fa-solid ${feat.icon} text-2xl`}></i>
               </div>
-              <h3 className="text-xl font-bold font-display mb-2">{feat.title}</h3>
+              <h3 className="text-xl font-medium font-display mb-2">{feat.title}</h3>
               <p className="text-primary-foreground/80 text-sm">{feat.desc}</p>
             </motion.div>
           ))}

@@ -5,8 +5,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           
           <div>
-            <span className="font-display font-bold text-2xl tracking-tight text-white mb-4 block">
-              SHREEJI <span className="text-primary">TOOLS</span>
+            <span className="font-display font-semibold text-2xl tracking-tight text-white mb-4 block">
+              SHREEJI <span className="text-primary">TOOLS & HARDWARE</span>
             </span>
             <p className="text-white/60 mb-6 max-w-sm">
               The Strength Behind Every Build. Rajkot's leading supplier of industrial tools, hardware, and safety equipment.
@@ -25,7 +25,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold font-display uppercase tracking-wider mb-6">Quick Links</h4>
+            <h4 className="text-lg font-semibold font-display uppercase tracking-wider mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li><a href="#home" className="text-white/60 hover:text-primary transition-colors">Home</a></li>
               <li><a href="#products" className="text-white/60 hover:text-primary transition-colors">Products</a></li>
@@ -36,7 +36,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold font-display uppercase tracking-wider mb-6">Contact</h4>
+            <h4 className="text-lg font-semibold font-display uppercase tracking-wider mb-6">Contact</h4>
             <ul className="space-y-4 text-white/60">
               <li className="flex gap-3">
                 <i className="fa-solid fa-location-dot mt-1 text-primary"></i>
