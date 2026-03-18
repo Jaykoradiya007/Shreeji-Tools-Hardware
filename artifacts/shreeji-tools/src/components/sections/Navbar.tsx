@@ -3,16 +3,17 @@ import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "Products", href: "#products" },
-  { name: "Brands", href: "#brands" },
-  { name: "About", href: "#about" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "#home", id: "home" },
+  { name: "Products", href: "#products", id: "products" },
+  { name: "Brands", href: "#brands", id: "brands" },
+  { name: "About", href: "#about", id: "about" },
+  { name: "Contact", href: "#contact", id: "contact" },
 ];
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +21,32 @@ export function Navbar() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const sectionIds = navLinks.map((l) => l.id);
+    const observers: IntersectionObserver[] = [];
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActiveSection(id);
+          }
+        },
+        {
+          rootMargin: "-40% 0px -55% 0px",
+          threshold: 0,
+        }
+      );
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
   }, []);
 
   return (
@@ -42,16 +69,27 @@ export function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-sm font-semibold uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors relative group"
-            >
-              {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = activeSection === link.id;
+            return (
+              <a
+                key={link.name}
+                href={link.href}
+                className={cn(
+                  "text-sm font-semibold uppercase tracking-wider transition-colors relative group",
+                  isActive ? "text-primary" : "text-muted-foreground hover:text-primary"
+                )}
+              >
+                {link.name}
+                <span
+                  className={cn(
+                    "absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300",
+                    isActive ? "w-full" : "w-0 group-hover:w-full"
+                  )}
+                />
+              </a>
+            );
+          })}
           <a
             href="#contact"
             className="ml-4 px-5 py-2.5 bg-foreground text-background text-sm font-semibold uppercase tracking-wider rounded-sm hover:bg-primary transition-colors"
@@ -79,16 +117,22 @@ export function Navbar() {
             className="md:hidden border-t bg-background overflow-hidden"
           >
             <div className="flex flex-col px-4 py-4 space-y-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="text-lg font-display font-semibold text-foreground hover:text-primary transition-colors border-b border-border/50 pb-2"
-                >
-                  {link.name}
-                </a>
-              ))}
+              {navLinks.map((link) => {
+                const isActive = activeSection === link.id;
+                return (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={cn(
+                      "text-lg font-display font-semibold transition-colors border-b border-border/50 pb-2",
+                      isActive ? "text-primary" : "text-foreground hover:text-primary"
+                    )}
+                  >
+                    {link.name}
+                  </a>
+                );
+              })}
             </div>
           </motion.div>
         )}
