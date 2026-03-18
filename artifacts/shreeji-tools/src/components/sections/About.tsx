@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import handToolsImg from "@/assets/hand-tools.png";
 
 export function About() {
   return (
@@ -50,20 +51,16 @@ export function About() {
             transition={{ duration: 0.6 }}
             className="relative h-full min-h-[400px]"
           >
-            {/* CSS Illustrated Visual / Abstract Geometric composition */}
-            <div className="absolute inset-0 bg-secondary rounded-sm border-2 border-border p-8 flex flex-col justify-between">
-              <div className="w-full h-full border-4 border-dashed border-primary/20 relative">
-                <div className="absolute top-0 left-0 w-16 h-16 border-t-4 border-l-4 border-primary -translate-x-2 -translate-y-2"></div>
-                <div className="absolute bottom-0 right-0 w-16 h-16 border-b-4 border-r-4 border-primary translate-x-2 translate-y-2"></div>
-                
-                <div className="w-full h-full flex items-center justify-center relative overflow-hidden">
-                   <div className="absolute w-64 h-64 border-[10px] border-primary/10 rounded-full"></div>
-                   <div className="absolute w-40 h-40 bg-grid-pattern opacity-40 rotate-45"></div>
-                   <div className="bg-background border-4 border-foreground p-8 shadow-[8px_8px_0px_0px_hsl(var(--primary))] z-10 transform -rotate-3">
-                     <div className="text-6xl font-display font-bold text-foreground">2017</div>
-                     <div className="text-lg font-bold tracking-widest uppercase text-primary mt-1">Rajkot, Gujarat</div>
-                   </div>
-                </div>
+            {/* Hand Tools Photo */}
+            <div className="absolute inset-0 rounded-sm overflow-hidden border-2 border-border">
+              <img
+                src={handToolsImg}
+                alt="Professional hand tools — hammers, spanners, screwdrivers, pliers and chisels"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
+                <div className="text-white font-display font-bold text-2xl tracking-widest">EST. 2017</div>
+                <div className="text-primary font-bold text-sm tracking-widest uppercase mt-0.5">Rajkot, Gujarat</div>
               </div>
             </div>
           </motion.div>
