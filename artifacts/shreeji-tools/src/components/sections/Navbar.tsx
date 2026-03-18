@@ -35,7 +35,7 @@ export function Navbar() {
             <i className="fa-solid fa-screwdriver-wrench text-xl"></i>
           </div>
           <span className="font-display font-bold text-2xl tracking-tight text-foreground">
-            SHREEJI <span className="text-primary">TOOLS</span>
+            SHREEJI <span className="text-primary">TOOLS & HARDWARE</span>
           </span>
         </a>
 
