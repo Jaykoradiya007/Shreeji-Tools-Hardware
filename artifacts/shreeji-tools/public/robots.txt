@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shreejitools.replit.app/sitemap.xml
+Sitemap: https://jaykoradiya007.github.io/Shreeji-Tools-Hardware/sitemap.xml
