@@ -34,25 +34,13 @@ jobs:
         with:
           version: 8
 
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
-
-      - name: Setup pnpm cache
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
       - name: Install dependencies
         run: pnpm install
 
       - name: Build the application
-        run: pnpm run build
+        run: pnpm --filter @workspace/shreeji-tools run build
+        env:
+          BASE_PATH: /Shreeji-Tools-Hardware/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -60,7 +48,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: './dist'
+          path: './artifacts/shreeji-tools/dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
