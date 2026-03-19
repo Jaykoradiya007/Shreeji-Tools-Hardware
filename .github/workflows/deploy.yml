@@ -64,7 +64,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './artifacts/shreeji-tools/dist'
+         path: './artifacts/shreeji-tools/dist/public'
 
       - name: Deploy to GitHub Pages
         id: deployment
