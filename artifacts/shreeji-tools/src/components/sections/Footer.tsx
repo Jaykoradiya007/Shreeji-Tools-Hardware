@@ -12,7 +12,7 @@ export function Footer() {
               The Strength Behind Every Build. Rajkot's leading supplier of industrial tools, hardware, and safety equipment.
             </p>
             <div className="flex gap-4">
-              <a href="https://wa.me/919876543210" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://wa.me/919879744025" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
                 <i className="fa-brands fa-whatsapp text-lg"></i>
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
@@ -44,7 +44,7 @@ export function Footer() {
               </li>
               <li className="flex gap-3">
                 <i className="fa-solid fa-phone mt-1 text-primary"></i>
-                <span>+91 98765 43210</span>
+                <span>+91 98797 44025</span>
               </li>
               <li className="flex gap-3">
                 <i className="fa-solid fa-clock mt-1 text-primary"></i>

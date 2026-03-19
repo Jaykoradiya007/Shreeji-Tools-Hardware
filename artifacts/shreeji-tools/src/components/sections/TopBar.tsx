@@ -6,7 +6,7 @@ export function TopBar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center gap-6">
           <span className="flex items-center gap-2">
-            <i className="fa-solid fa-phone"></i> +91 98765 43210
+            <i className="fa-solid fa-phone"></i> +91 98797 44025
           </span>
           <span className="flex items-center gap-2">
             <i className="fa-solid fa-location-dot"></i> Balaji Industrial Area, Gondal Road, Rajkot

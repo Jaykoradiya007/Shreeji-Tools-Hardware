@@ -123,7 +123,7 @@ export function Products() {
           <h3 className="text-2xl font-display font-semibold mb-2">Can't find what you need?</h3>
           <p className="text-muted-foreground mb-6">We stock 500+ products in our physical store.</p>
           <Button asChild className="bg-[#25D366] hover:bg-[#20bd5a] text-white">
-            <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer">
+            <a href="https://wa.me/919879744025" target="_blank" rel="noreferrer">
               <i className="fa-brands fa-whatsapp text-lg mr-2"></i> Message Us on WhatsApp
             </a>
           </Button>

@@ -70,9 +70,9 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium text-foreground mb-1">Phone Number</h4>
-                  <p className="text-muted-foreground text-lg font-semibold">+91 98765 43210</p>
+                  <p className="text-muted-foreground text-lg font-semibold">+91 98797 44025</p>
                   <a 
-                    href="https://wa.me/919876543210" 
+                    href="https://wa.me/919879744025" 
                     target="_blank" 
                     rel="noreferrer"
                     className="inline-flex items-center text-sm font-semibold text-[#25D366] hover:underline mt-2"
@@ -101,8 +101,8 @@ export function Contact() {
               <h3 className="text-xl font-semibold font-display mb-6">Send an Enquiry</h3>
               
               <form onSubmit={handleSubmit} className="space-y-4">
-                {/* Replace YOUR_ACCESS_KEY with your Web3Forms key from https://web3forms.com */}
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+                {/* Replace 0fd18990-6965-4567-88ed-1598a10bcf93 with your Web3Forms key from https://web3forms.com */}
+                <input type="hidden" name="access_key" value="0fd18990-6965-4567-88ed-1598a10bcf93" />
                 <input type="hidden" name="subject" value="New Enquiry from Shreeji Tools Website" />
                 <input type="hidden" name="from_name" value="Shreeji Tools System" />
 
