@@ -55,6 +55,8 @@ jobs:
         run: pnpm --filter @workspace/shreeji-tools run build
         env:
           BASE_PATH: /Shreeji-Tools-Hardware/
+          PORT: 3000
+          NODE_ENV: production
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
